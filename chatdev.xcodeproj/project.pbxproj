@@ -12,9 +12,14 @@
 		A645994620F62A5400075D74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A645994420F62A5400075D74 /* Main.storyboard */; };
 		A645994820F62A5500075D74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A645994720F62A5500075D74 /* Assets.xcassets */; };
 		A645994B20F62A5500075D74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A645994920F62A5500075D74 /* LaunchScreen.storyboard */; };
+		A645995520F62BBF00075D74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A645995420F62BBF00075D74 /* GoogleService-Info.plist */; };
+		A67E1A0220F64E0600D208A9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67E1A0120F64E0600D208A9 /* LoginViewController.swift */; };
+		EB62A7C72673967D11626EDA /* Pods_chatdev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEEBEB43C909ED8B74F81B /* Pods_chatdev.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04CEEBEB43C909ED8B74F81B /* Pods_chatdev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chatdev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B23A8030212CD1D3941579D /* Pods-chatdev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatdev.release.xcconfig"; path = "Pods/Target Support Files/Pods-chatdev/Pods-chatdev.release.xcconfig"; sourceTree = "<group>"; };
 		A645993D20F62A5400075D74 /* chatdev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatdev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A645994020F62A5400075D74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A645994220F62A5400075D74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		A645994720F62A5500075D74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A645994A20F62A5500075D74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A645994C20F62A5500075D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A645995420F62BBF00075D74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A67E1A0120F64E0600D208A9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EB06787EFED2B9886F3CDC35 /* Pods-chatdev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatdev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chatdev/Pods-chatdev.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB62A7C72673967D11626EDA /* Pods_chatdev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54C9F63120F2CB6D1B04C7F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB06787EFED2B9886F3CDC35 /* Pods-chatdev.debug.xcconfig */,
+				2B23A8030212CD1D3941579D /* Pods-chatdev.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		80B0887BCC8F4EA535E97C31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04CEEBEB43C909ED8B74F81B /* Pods_chatdev.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A645993420F62A5400075D74 = {
 			isa = PBXGroup;
 			children = (
 				A645993F20F62A5400075D74 /* chatdev */,
 				A645993E20F62A5400075D74 /* Products */,
+				54C9F63120F2CB6D1B04C7F3 /* Pods */,
+				80B0887BCC8F4EA535E97C31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +88,8 @@
 				A645994720F62A5500075D74 /* Assets.xcassets */,
 				A645994920F62A5500075D74 /* LaunchScreen.storyboard */,
 				A645994C20F62A5500075D74 /* Info.plist */,
+				A645995420F62BBF00075D74 /* GoogleService-Info.plist */,
+				A67E1A0120F64E0600D208A9 /* LoginViewController.swift */,
 			);
 			path = chatdev;
 			sourceTree = "<group>";
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A645994F20F62A5500075D74 /* Build configuration list for PBXNativeTarget "chatdev" */;
 			buildPhases = (
+				3DCF77326E5707BB245CB1F1 /* [CP] Check Pods Manifest.lock */,
 				A645993920F62A5400075D74 /* Sources */,
 				A645993A20F62A5400075D74 /* Frameworks */,
 				A645993B20F62A5400075D74 /* Resources */,
+				0C9AAF36FBC7FE0821D49EFA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A645994B20F62A5500075D74 /* LaunchScreen.storyboard in Resources */,
+				A645995520F62BBF00075D74 /* GoogleService-Info.plist in Resources */,
 				A645994820F62A5500075D74 /* Assets.xcassets in Resources */,
 				A645994620F62A5400075D74 /* Main.storyboard in Resources */,
 			);
@@ -130,11 +163,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C9AAF36FBC7FE0821D49EFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-chatdev/Pods-chatdev-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-chatdev/Pods-chatdev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DCF77326E5707BB245CB1F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chatdev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A645993920F62A5400075D74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A67E1A0220F64E0600D208A9 /* LoginViewController.swift in Sources */,
 				A645994320F62A5400075D74 /* ViewController.swift in Sources */,
 				A645994120F62A5400075D74 /* AppDelegate.swift in Sources */,
 			);
@@ -278,6 +361,7 @@
 		};
 		A645995020F62A5500075D74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB06787EFED2B9886F3CDC35 /* Pods-chatdev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,12 +373,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uxu.chatdev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		A645995120F62A5500075D74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B23A8030212CD1D3941579D /* Pods-chatdev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,7 +391,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uxu.chatdev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
